@@ -1,0 +1,5 @@
+softcam (MIT) copiado sin cambios desde https://github.com/tshino/softcam
+commit 5113173d22a6aac4c9f30c36bb2cf900afef05f4 (2026-09-17)
+
+Las personalizaciones de Martec (nombre, CLSID, runtime estatico) NO se hacen
+aca: las aplica build/driver/personalizar_softcam.py sobre una copia.

@@ -1,0 +1,7 @@
+YuNet: detector de caras (MIT, Shiqi Yu). Lo usa motor.py via cv2.FaceDetectorYN.
+
+Origen: https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet
+Archivo: face_detection_yunet_2023mar.onnx, 232589 bytes
+SHA256:  8F2383E4DD3CFBB4553EA8718107FC0423210DC964F9F4280604804ED2552FA4
+Descargado el 28-sep-2026. La copia que empaqueta la app esta en
+src/martec_camara/recursos/.

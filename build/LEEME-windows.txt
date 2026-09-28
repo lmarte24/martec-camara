@@ -1,0 +1,47 @@
+MARTEC CAMARA
+Encuadre automatico con zoom y retoque de piel para tu webcam.
+Gratis y de codigo abierto. Hecho por Martec.
+
+------------------------------------------------------------------
+COMO SE USA
+------------------------------------------------------------------
+1. Elige la camara de Martec en tu app de video (Meet, Teams, Zoom,
+   Chrome, WhatsApp):
+   - Windows 11: "Martec Camara (Windows Virtual Camera)". Windows le
+     agrega ese apellido.
+   - Windows 10: "Martec Camara". En Windows 10, WhatsApp y las demas
+     apps de la Microsoft Store no la ven.
+   En Chrome se puede dejar fija en chrome://settings/content/camera
+2. Listo. Tu webcam se enciende sola cuando una app abre la camara
+   de Martec, y se apaga cuando ya nadie la usa.
+
+La ventana de Martec Camara muestra lo que ven los demas y el
+estado. Ahi se ajustan el acercamiento, el espacio sobre la cabeza,
+el retoque de piel y el espejo; se guardan solos.
+
+- Si Windows pregunta si Martec Camara puede usar la camara,
+  elige Permitir.
+- Cerrar la ventana (la X) la deja en la bandeja, junto al reloj: la
+  camara sigue funcionando. Clic en el icono para abrirla; clic derecho
+  para "Encendido" o "Salir". Windows 11 esconde los iconos nuevos tras
+  la flecha "^": arrastralo a la barra para dejarlo siempre a la vista.
+- La luz de tu webcam solo se enciende mientras una app de video esta
+  mirando la camara de Martec (o con la ventana abierta, para la vista
+  previa). Unos segundos despues de colgar, se apaga.
+- Para usar tu webcam directo en otra app, desmarca "Encendido".
+
+Privacidad: la imagen se procesa solo en tu equipo. Martec Camara no
+envia nada a internet.
+
+Si algo falla: boton "Registros" en la app. Ahi esta el archivo
+martec-camara.log con lo que paso.
+
+Para desinstalar: Configuracion > Aplicaciones > Martec Camara.
+
+Novedades, versiones nuevas y reportar problemas:
+https://github.com/lmarte24/martec-camara
+Si te sirvio, dale una estrella alli. Si quieres apoyar el proyecto, en esa
+pagina esta el boton de donar con PayPal (opcional: la app es y sera gratis).
+
+Licencias: carpeta "licencias". Martec Camara es MIT; sus drivers de
+camara virtual se basan en softcam (MIT) y VCamSample (MIT).

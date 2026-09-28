@@ -1,0 +1,6 @@
+# Versiones probadas el 26-sep-2026 (Windows 11, Python 3.14).
+# En Windows la camara virtual es el driver propio (build/driver): no hace falta pyvirtualcam.
+opencv-python-headless==4.14.0.94
+numpy==2.5.3
+cv2_enumerate_cameras==1.3.4
+pyinstaller==6.22.3

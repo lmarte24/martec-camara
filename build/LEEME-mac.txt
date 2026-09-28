@@ -1,0 +1,47 @@
+MARTEC CAMARA (Mac)
+Encuadre automatico con zoom y retoque de piel para tu webcam.
+Gratis y de codigo abierto. Hecho por Martec.
+
+VERSION EXPERIMENTAL: todavia no se ha probado en una Mac real. Si algo
+falla, cuentanos en https://github.com/lmarte24/martec-camara/issues
+
+------------------------------------------------------------------
+ANTES DE EMPEZAR: instala OBS Studio (gratis)
+------------------------------------------------------------------
+En Mac, Martec Camara usa la "camara virtual" de OBS para llevar tu
+imagen a Meet, Teams o Zoom. Descargalo de https://obsproject.com,
+abrelo UNA vez, acepta la extension de camara que pide macOS
+(Configuracion del Sistema) y cierralo.
+
+------------------------------------------------------------------
+INSTALACION (Apple Silicon, macOS 14 o posterior)
+------------------------------------------------------------------
+1. Descomprime y arrastra "MartecCamara.app" a la carpeta Aplicaciones.
+2. La primera vez abrela con clic derecho > Abrir. Si macOS no deja,
+   ve a Configuracion del Sistema > Privacidad y seguridad y toca
+   "Abrir de todos modos". Pasa porque la app no esta firmada por Apple.
+3. Permite el acceso a la camara cuando lo pida.
+4. En Meet, Teams o Zoom elige la camara "OBS Virtual Camera".
+
+------------------------------------------------------------------
+USO
+------------------------------------------------------------------
+- La ventana muestra lo que ven los demas y el estado. Si algo falta
+  (por ejemplo OBS), lo dice ahi mismo.
+- Acercamiento, espacio sobre la cabeza y retoque de piel se ajustan
+  con las barras y se guardan solos.
+- "Iniciar con el sistema" la deja abriendose sola al encender.
+- Cerrar la ventana solo la minimiza: la camara sigue funcionando.
+  Para cerrar del todo usa "Salir".
+- Mientras la app esta encendida usa tu camara real: las demas apps
+  deben usar "OBS Virtual Camera". Para usar tu camara directo,
+  desmarca "Encendido".
+
+Privacidad: la imagen se procesa solo en tu equipo. Martec Camara no
+envia nada a internet.
+
+Si algo falla: boton "Registros" en la app. Ahi esta el archivo
+martec-camara.log con lo que paso.
+
+Licencias: carpeta "licencias". La app es MIT; el programa puente-vcam
+es GPL-2.0 y su codigo fuente esta en la carpeta "fuentes".

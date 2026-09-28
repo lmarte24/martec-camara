@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Se aplica encima de los proyectos de softcam al compilar (ForceImportBeforeCppTargets).
+  Runtime de C++ ESTATICO (/MT): el driver se carga dentro de Chrome, Teams o Zoom,
+  y con el runtime dinamico no cargaria en una PC sin el Visual C++ Redistributable.
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

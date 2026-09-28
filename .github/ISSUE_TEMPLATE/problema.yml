@@ -1,0 +1,39 @@
+name: Reportar un problema
+description: Algo no funciona como debería.
+labels: ["problema"]
+body:
+  - type: textarea
+    id: que_paso
+    attributes:
+      label: ¿Qué pasó?
+      description: Qué hiciste, qué esperabas y qué viste.
+    validations:
+      required: true
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Sistema
+      options:
+        - Windows 11
+        - Windows 10
+        - Mac (Apple Silicon)
+    validations:
+      required: true
+  - type: input
+    id: app_video
+    attributes:
+      label: App de video
+      description: Meet, Teams, Zoom, WhatsApp...
+  - type: input
+    id: webcam
+    attributes:
+      label: Webcam
+      description: Marca y modelo, si lo sabes.
+  - type: textarea
+    id: registro
+    attributes:
+      label: Registro de la app
+      description: >
+        En la app, botón «Registros», abre martec-camara.log y pega aquí las
+        últimas líneas.
+      render: text

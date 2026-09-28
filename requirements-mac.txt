@@ -1,0 +1,8 @@
+# Ruedas verificadas para macOS Apple Silicon con Python 3.13 (25-sep-2026).
+# numpy 2.5.3 para arm64 exige macOS 14 o posterior.
+opencv-python-headless==4.14.0.94
+numpy==2.5.3
+cv2_enumerate_cameras==1.3.4
+pyobjc-framework-AVFoundation
+pyvirtualcam==0.15.0
+pyinstaller==6.22.3

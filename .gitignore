@@ -1,0 +1,18 @@
+# Entornos y compilaciones (se generan con build/windows.ps1 o build/mac.sh)
+.venv-build/
+dist/
+build/trabajo/
+build/driver/salida/
+build/icono.ico
+build/icono.icns
+build/icono.iconset/
+__pycache__/
+*.pyc
+*.log
+
+# Visual Studio / NuGet del driver moderno
+driver_mf/packages/
+driver_mf/x64/
+driver_mf/*/x64/
+driver_mf/.vs/
+*.user

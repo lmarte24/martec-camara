@@ -1,0 +1,54 @@
+# Construye Martec Camara en la nube de GitHub. Sirve sobre todo para producir
+# el paquete de Mac sin tener una Mac a mano.
+#
+# Se corre a mano: pestana Actions > Construir > Run workflow, eligiendo la
+# plataforma. Los paquetes quedan como artefactos de la ejecucion; se suben a
+# una Release a mano, despues de revisarlos.
+
+name: Construir
+
+on:
+  workflow_dispatch:
+    inputs:
+      plataforma:
+        description: "Que construir"
+        type: choice
+        options: [ambas, windows, mac]
+        default: ambas
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    if: inputs.plataforma != 'mac'
+    runs-on: windows-latest        # trae Visual Studio con C++ para compilar los drivers
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Inno Setup
+        run: choco install innosetup --no-progress -y
+      - name: Construir (drivers + app + instalador)
+        shell: pwsh
+        run: ./build/windows.ps1 -Python python
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MartecCamara-windows
+          path: dist/*-instalador.exe
+
+  mac:
+    if: inputs.plataforma != 'windows'
+    runs-on: macos-latest          # Apple Silicon
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Construir
+        run: PYTHON=python bash build/mac.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MartecCamara-mac
+          path: dist/*.zip

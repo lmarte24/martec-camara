@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Comentarios, ideas y preguntas
+    url: https://github.com/lmarte24/martec-camara/discussions
+    about: Cuéntanos cómo te fue con Martec Cámara o qué le agregarías.
