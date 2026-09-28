@@ -34,6 +34,10 @@ def copiar_licencias_paquete(nombre, dest):
         # plate") que no es una licencia.
         if base.endswith(".xml"):
             continue
+        # Tampoco los modulos de prueba de pyobjc que se llaman "copying"
+        # (test_copying.so y sus .dSYM de depuracion).
+        if "pyobjctest" in str(f).lower() or ".dsym" in str(f).lower():
+            continue
         if any(k in base for k in ("license", "licence", "copying", "notice")):
             origen = f.locate()
             if os.path.isfile(origen):
